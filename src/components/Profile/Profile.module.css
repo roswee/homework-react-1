@@ -4,16 +4,16 @@
     max-width: 260px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background: white;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     font-size: 16px;
-};
+}
 
 .description {
     justify-content: center;
     max-height: 300px;
     overflow: hidden;
-};
+}
 
 .avatar__jpg {
     display: block;
@@ -28,5 +28,21 @@
 
 .profile__name {
     font-size: 20px;
+    font-weight: 700;
+}
+
+.profile__stats {
+    display: flex;
+    list-style: none;
+}
+
+.profile__li {
+    box-sizing: border-box;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__quantity {
     font-weight: 700;
 }
