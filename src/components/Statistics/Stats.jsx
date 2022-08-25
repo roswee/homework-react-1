@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types';
+import styles from "./Stats.module.css"
+
+const {statistics} = styles
 
 export const Statistics = ({title, stats}) => {
 return (
-<Statistics class="statistics">
+<div className={statistics}>
   {title? (<h2 class="title">{title}</h2>) : null}
 
   <ul class="stat-list">
@@ -13,7 +16,7 @@ return (
         </li>
     ))}
   </ul>
-</Statistics>
+</div>
 );
 }
 
