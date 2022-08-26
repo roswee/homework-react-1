@@ -1,7 +1,7 @@
 .profile {
-    margin: 30px auto;
+    margin: 30px;
     text-align: center;
-    max-width: 260px;
+    width: 260px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background: white;
     border-radius: 5px;
@@ -34,15 +34,33 @@
 .profile__stats {
     display: flex;
     list-style: none;
+    background-color:lightgray;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
 }
 
 .profile__li {
     box-sizing: border-box;
-    width: 80px;
+    width: calc(100%/3 - 2px);
+    margin: 0;
     display: flex;
     flex-direction: column;
+
+    padding:10px 0;
+}
+
+.profile__li:not(:last-child) {
+    border: 1px solid rgb(216, 224, 234);
 }
 
 .profile__quantity {
     font-weight: 700;
+}
+
+.profil__label {
+    color: rgb(125, 125, 125);
+    font-size: small;
+    padding-bottom: 3px;
 }

@@ -1,24 +1,24 @@
 import styles from "./Transactions.module.css"
 
-const {transaction} = styles
+const {transaction, transaction__head, transaction__body, transaction__row} = styles
 
 export const TransactionHistory = ({items}) => {
     return (
         <div>
             <table className={transaction}>
-                <thead>
-                    <tr>
+                <thead className={transaction__head}>
+                    <tr className={transaction__row}>
                     <th>Type</th>
                     <th>Amount</th>
                     <th>Currency</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className={transaction__body}>
                     {items.map(item => (
-                        <tr>
+                        <tr className={transaction__row}>
                             <td>{item.type}</td>
                             <td>{item.amount}</td>
-                            <td>{item.currenct}</td>
+                            <td>{item.currency}</td>
                         </tr>
                     ))}
                 </tbody>

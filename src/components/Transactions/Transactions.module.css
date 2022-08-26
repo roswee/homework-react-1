@@ -1,10 +1,27 @@
 .transaction {
-    margin: 30px auto;
+    margin: 30px;
     text-align: center;
-    max-width: 260px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    min-width: 400px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 4px 4px 4px;
     background: white;
-    border-radius: 10px;
-    overflow: hidden;
     font-size: 16px;
+    padding: 0;
+}
+
+.transaction__head{
+    background-color: rgb(34, 150, 218);
+    color:antiquewhite
+}
+
+.transaction__body {
+    color: rgba(0, 0, 0, 0.66)
+}
+
+.transaction__row:nth-child(2n) {
+    background-color: rgb(218, 239, 240);
+}
+
+.transaction__row {
+    height: 40px;
 }

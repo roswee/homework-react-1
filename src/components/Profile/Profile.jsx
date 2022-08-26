@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import styles from './Profile.module.css';
 
-const {profile__quantity, profile__li, profile, description, avatar__jpg, profile__name, profile__stats} = styles;
+const {profil__label, profile__quantity, profile__li, profile, description, avatar__jpg, profile__name, profile__stats} = styles;
 
 const Profile = ({username, tag, location, avatar, stats}) => {
     return (
@@ -13,20 +13,20 @@ const Profile = ({username, tag, location, avatar, stats}) => {
                 className={avatar__jpg}
                 />
                 <p className={profile__name}>{username}</p>
-                <p class="tag">{tag}</p>
-                <p class="location">{location}</p>
+                <p>@{tag}</p>
+                <p>{location}</p>
             </div>
             <ul className={profile__stats}>
                 <li className={profile__li}>
-                <span class="label">Followers</span>
+                <span className={profil__label}>Followers</span>
                 <span className={profile__quantity}>{stats.followers}</span>
                 </li>
                 <li className={profile__li}>
-                <span class="label">Views</span>
+                <span className={profil__label}>Views</span>
                 <span className={profile__quantity}>{stats.views}</span>
                 </li>
                 <li className={profile__li}>
-                <span class="label">Likes</span>
+                <span className={profil__label}>Likes</span>
                 <span className={profile__quantity}>{stats.likes}</span>
                 </li>
             </ul>

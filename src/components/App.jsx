@@ -5,7 +5,8 @@ import FriendList from "./FriendList/Friendlist";
 import { TransactionHistory } from "./Transactions/Transactions";
 import data from "statistics/data.json";
 import transactions from "transaction-history/transactions.json"
-import friends from "friend-list/friends.json"
+import friends from "friend-list/friends.json";
+
 
 export const App = () => {
   return (
@@ -17,6 +18,7 @@ export const App = () => {
         alignItems: 'center',
         fontSize: 40,
         color: '#010101',
+        flexWrap: 'wrap',
       }}
     >
 
@@ -27,11 +29,11 @@ export const App = () => {
     avatar={user.avatar}
     stats={user.stats}
   />
-  <Statistics title="Upload stats" stats={data} />;
+  <Statistics title="Upload stats" stats={data} />
 
-  <FriendList friends={friends} />,
+  <FriendList friends={friends} />
 
-  <TransactionHistory items={transactions} />;
+  <TransactionHistory items={transactions} />
 
     </div>
   );
